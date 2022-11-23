@@ -1,4 +1,9 @@
-contacts = []
+import json
+
+file = open('prog1-1200/contacts.json', 'r')
+dictionary = json.load(file)
+contacts = dictionary['contacts']
+file.close()
 
 while(True):
     response = input('(1)add contact (2)print contacts (3)exit: ')
@@ -24,18 +29,15 @@ while(True):
             print(f"Email: {contact['email']}")        
         
     elif response == '3':
+        print('Saving data...')
+
+        dictionary = {'contacts': contacts}
+        file = open('prog1-1200/contacts.json', 'w')        
+        json.dump(dictionary, file, indent=4)
+        file.close()
+
+        print('Data saved successfully.')
         print('Bye bye!')
         exit()
     else:
         print('Please respond with 1, 2 or 3')
-
-#UZDEVUMS
-#Izvadīt kontaktus šādā formātā
-#---CONTACT---
-#Anna Bērziņa
-#Phone: +371 65498798
-#Email: ab@somemail.com
-#---CONTACT---
-#Oskars Gudrais
-#Phone: +371 9645785123
-#Email: og@somemail.com
