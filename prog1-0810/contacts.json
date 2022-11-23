@@ -1,0 +1,29 @@
+{
+    "contacts": [
+        {
+            "name": "Anna",
+            "surname": "Smart",
+            "phone": "+321654987"
+        },
+        {
+            "name": "Oskars",
+            "surname": "Labais",
+            "phone": "+789456123"
+        },
+        {
+            "name": "Tomass",
+            "surname": "Vite",
+            "phone": "+456789123"
+        },
+        {
+            "name": "Jenifer",
+            "surname": "Lopez",
+            "phone": "+123654987"
+        },
+        {
+            "name": "Anete",
+            "surname": "B\u0113rzi\u0146a",
+            "phone": "+852147963"
+        }
+    ]
+}
